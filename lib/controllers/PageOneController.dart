@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 class PageOneController extends GetxController {
   Color color = Colors.red;
-  String phrase = "love mean";
+  String phrase = "love mean, love you my country";
   changeColor() {
     if (color == Colors.red) {
       color = Colors.yellow;
