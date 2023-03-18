@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -13,7 +15,7 @@ class PageOneController extends GetxController {
       img = Image.asset("assets/images/may.jpg",height:355.px,width:474.px);
       phrase = "May I???";
     } else if(color == Colors.yellow){
-      color==Colors.green.
+      color==Colors.green;
       img = Image.asset("assets/images/yes.jpg",height:355.px,width:474.px);
       phrase ="Yes";
     }
