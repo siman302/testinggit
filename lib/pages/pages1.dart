@@ -5,21 +5,25 @@ import 'package:testinggit/controllers/PageOneController.dart';
 class PageOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<PageOneController>(
+     return Scaffold(
+    body: GetBuilder<PageOneController>(
         init: PageOneController(),
         builder: (PageOneController _) {
-          return InkWell(
+         
+            color: _.color,
+            child:InkWell(
               onTap: () => _.changeColor(),
-              child: Container(
-                padding: const EdgeInsets.all(8.0),
-                color: _.color,
-                child: Center(
-                    child: Text(
+                child: Column(
+                  crossAxisAlignment:CrossAxisAlignment.center
+                  mainAxisAlignment: MainAxisAlignment.center,
+                    children:[ 
+                      _.img,
+                      Text(
                   _.phrase,
                   textAlign: TextAlign.center,
                   textScaleFactor: 2,
-                )),
-              ));
+                )])
+              );
         });
   }
 }
